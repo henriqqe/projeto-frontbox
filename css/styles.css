@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**********************************/
@@ -20,19 +20,78 @@
 /**********************************/
 /* 0. Variáveis
 /**********************************/
+:root {
+  --font-primary: 'Nunito', Helvetica, Arial, sans-serif;
+
+  --green-dark: #049a40;
+  --green-light: #0bf96a;
+  --pink-dark: #e10bf9;
+  --pink-light: #e3a0fd;
+  --white: #f5f5f5;
+}
 
 /**********************************/
 /* 1. Estilos gerais
 /**********************************/
-
+body {
+  background-color: var(--white);
+  font-family: var(--font-primary);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a > img {
+  cursor: text;
+}
+li a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+  transition: 1s;
+}
+hr {
+  border: none;
+  background-color: var(--pink-dark);
+  height: 2px;
+  width: 140px;
+  margin: 20px auto;
+}
 /**********************************/
 /* 2. Menu
 /**********************************/
+.menu-bg {
+  background-color: var(--green-light);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+.menu__logo {
+  margin: 10px;
+}
 
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav__link {
+  margin-left: 20px;
+}
 /**********************************/
 /* 3. Header
 /**********************************/
-
+.intro {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 0;
+}
 /**********************************/
 /* 4. Quem somos
 /**********************************/
@@ -56,4 +115,3 @@
 /**********************************/
 /* 9. Footer
 /**********************************/
-
