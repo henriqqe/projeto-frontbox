@@ -44,12 +44,7 @@ a {
 a > img {
   cursor: text;
 }
-li a:hover {
-  text-decoration: underline;
-  color: white;
-  background-color: black;
-  transition: 1s;
-}
+
 hr {
   border: none;
   background-color: var(--pink-dark);
@@ -81,6 +76,11 @@ hr {
 }
 .nav__link {
   margin-left: 20px;
+}
+li a:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.671);
+  transition: 1s;
 }
 /**********************************/
 /* 3. Header
