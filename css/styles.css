@@ -52,6 +52,23 @@ hr {
   width: 140px;
   margin: 20px auto;
 }
+
+p {
+  line-height: 21.82px;
+  padding: 0 10px;
+  text-indent: 25px;
+}
+
+.section__titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 /**********************************/
 /* 2. Menu
 /**********************************/
@@ -77,11 +94,13 @@ hr {
 .nav__link {
   margin-left: 20px;
 }
+
 li a:hover {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.671);
-  transition: 1s;
+  transition: 0.5s;
 }
+
 /**********************************/
 /* 3. Header
 /**********************************/
@@ -96,13 +115,60 @@ li a:hover {
 /* 4. Quem somos
 /**********************************/
 
+.somos {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.somos-c {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.somos-c__texto {
+  flex: 6 1 160px;
+}
+.somos-c__img {
+  flex: 1 1 350px;
+}
 /**********************************/
 /* 5. Nossos cursos
 /**********************************/
+.cursos {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
+.cursos-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.curso {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.curso__titulo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
 /**********************************/
 /* 6. Planos
 /**********************************/
+.planos {
+  background-color: var(--pink-light);
+}
+
+.planos-c {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /**********************************/
 /* 7. Vantagens
